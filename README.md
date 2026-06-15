@@ -15,6 +15,7 @@ accuracy and performance of these algorithms is dependent on the quality and gen
 |---|---|
 | RQ1 | Is there a statistically significant disparity in False Negative Rate (FNR) and AUROC across racial and gender subgroups in a baseline CNN? |
 | RQ2 | To what extent does reweighing as a bias mitigation technique reduce FNR and AUROC disparities? |
+| RQ3 | In what ways do biased diagnostic tools lead to tangible delays in life-saving treatment, and how does this reinforce historical medical mistrust? |
 
 ## Key Findings
 
