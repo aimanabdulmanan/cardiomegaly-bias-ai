@@ -84,10 +84,15 @@ This project was completed as part of **IJC202: Responsible Data Science** at th
 
 ## Key references:
 
-- Rajpurkar et al. (2017) — CheXNet: Radiologist-level pneumonia detection
-- Seyyed-Kalantari et al. (2021) — Underdiagnosis bias in chest radiograph AI
-- Hardt et al. (2016) — Equality of opportunity in supervised learning
-- Gichoya et al. (2022) — AI recognition of patient race in medical imaging
+1. Rajpurkar et al. (2017) — CheXNet: Radiologist-level pneumonia detection
+2. Seyyed-Kalantari et al. (2021) — Underdiagnosis bias in chest radiograph AI
+3. Hardt et al. (2016) — Equality of opportunity in supervised learning
+4. Gichoya et al. (2022) — AI recognition of patient race in medical imaging
+
+## License
+
+This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
 
 
 
