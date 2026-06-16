@@ -71,6 +71,16 @@ Used AIF360's reweighing algorithm. No data was added, removed, or duplicated.
 1. The MIMIC-CXR dataset contains de-identified patient data and cannot be included in this repository.
 2. Access requires credentialing through PhysioNet.
 
+## FATES Considerations
+
+1. Fairness: The dataset's demographic imbalance (White patients dominating) meant fairness could not be achieved without class adjustments. Reweighing reduced disparities for minority groups, though structural underrepresentation in the training data limited its effectiveness. Label standardisation for race and cardiomegaly prevalence validation per split improved consistency, but hardware constraints restricted the analysis to 75,216 of 377,110 records, introducing further fairness concerns.
+
+2. Accountability and Transparency: Kaggle's versioned notebook environment ensured all data modifications and model iterations were logged and reproducible. Data sources, project intent, and individual contributions were clearly documented. Given the historical mistreatment of marginalised patients, data provenance was prioritised so that all labels could be traced to their origin.
+
+3. Ethics: Unnecessary patient details were excluded throughout, preserving anonymity and aligning with data protection protocols agreed upon during acquisition. However, reweighing introduced a sensitivity–specificity trade-off: higher false positive rates risk placing additional testing burdens on minority populations already facing financial and healthcare access barriers, a tension that must be carefully considered in any clinical deployment.
+
+4. Safety: Prioritising lower false negative rates over precision overall protects patient safety, as missed cardiomegaly diagnoses carry greater clinical risk than false positives. However, FNRs remained high in absolute terms, and the model was trained on a single-source dataset, limiting generalisability. Future deployments should validate on demographically and geographically diverse data before integration into clinical practice.
+
 ## Limitations
 
 1. Dataset restricted to MIMIC-CXR folders `p10`–`p11`, limiting generalisability (75,216 of 377,110 records).
